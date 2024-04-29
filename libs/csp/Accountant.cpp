@@ -254,9 +254,7 @@ namespace csp {
 
             for(auto match: matches.value())
             {
-               output << std::format("id:{} o:{} {} {} {}\n",
-                                     result.get_id(),
-                                     result.get_global_data_offset(),
+               output << std::format("{} {} {}\n",
                                      stats.get_global_line_number(match) + 1,
                                      stats.get_match_offset(result,match)+ 1,
                                      match.Text);
